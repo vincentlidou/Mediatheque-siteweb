@@ -1,0 +1,142 @@
+.index-h1 {
+
+	text-align: center;
+	color: #000000;
+	border-style: solid #080808;
+	background-color: #a8add4;
+	margin: 0% 20% 5% 20%;
+	border-radius:35px 35px;
+	}
+
+.formulaire {
+
+	text-align: center;
+	color: #303177;
+	border-style: solid #dadada;
+	background-color: #94a4a5;
+	margin: 0% 40% 0% 40%;
+	border-radius:35px 35px;
+}
+
+
+.alerte{
+
+	color: #fa0000;
+}
+
+.bouton {
+
+	text-align: center;
+	border-radius:35px 35px;
+	background: #f5f5f5;
+	border:black;
+	color:#555;
+	font:bold 12px;
+	padding:6px 6px;
+	border:1px solid #ccc;
+}
+
+.baliseP{
+
+	text-align: center;
+	font-size: larger;
+}
+
+.bouton_Modif{
+
+	display: block;
+    right: 10px;
+    top: 0;
+    position: absolute ;
+    margin-right: 40px;
+    margin-top: 5px;
+	text-align: center;
+	font:bold 12px;
+	border-radius:35px 35px;
+	background: #f5f5f5;
+	border:white;
+	padding:1px 1px;
+	background: url(image/gear.png);
+}
+
+.bouton_Deco{
+
+	display: block;
+    right: 10px;
+    top: 0;
+    position: absolute ;
+    margin-right: 10px;
+    margin-top: 5px;
+	text-align: center;
+	font:bold 12px;
+	background: #f5f5f5;
+	border:white;
+	padding:1px 1px;
+	background: url(image/deco.png);
+}
+
+.bouton_Back{
+
+	display: block;
+    right: 10px;
+    top: 0;
+    position: absolute ;
+    margin-right: 90px;
+    margin-top: 5px;
+	text-align: center;
+	font:bold 12px;
+	background: #f5f5f5;
+	border:white;
+	padding:1px 1px;
+	background: url(image/back.png);
+}
+
+.balisePSynopsis{
+
+	text-align: center;
+	margin-right:30%;
+	margin-left:30%;
+	font-size: larger;
+
+}
+
+/* modifier */
+
+.form {
+	margin-left: auto;
+	margin-right: auto;
+	width: 850px;
+	padding-bottom: 100px;
+  }
+  
+  .tab {
+	margin-left: auto;
+	margin-right: auto;
+	width: 850px;
+  }
+  
+  .boutonRecherche {
+	margin-right: 40px;
+  }
+  
+  .tailleEcriture {
+	font-size: 1.3em;
+  }
+  
+  .tailleEcritureTitreTableau {
+	font-size: 1.7em;
+	font-style: bold;
+  }
+  
+  #ficheLivre {
+	background-color: #1c87c9;
+	border: none;
+	color: white;
+	padding: 5px 5px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	margin: 4px 2px;
+	cursor: pointer;
+	border-radius: 20px;
+  }
