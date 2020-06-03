@@ -2,10 +2,10 @@
 -- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1:3306
--- Generation Time: May 30, 2020 at 04:25 PM
--- Server version: 5.7.26
--- PHP Version: 7.3.5
+-- Hôte : 127.0.0.1:3306
+-- Généré le :  mer. 03 juin 2020 à 12:59
+-- Version du serveur :  5.7.26
+-- Version de PHP :  7.3.5
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `mediatheque`
+-- Base de données :  `mediatheque`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `administrateur`
+-- Structure de la table `administrateur`
 --
 
 DROP TABLE IF EXISTS `administrateur`;
@@ -39,7 +39,7 @@ CREATE TABLE IF NOT EXISTS `administrateur` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `administrateur`
+-- Déchargement des données de la table `administrateur`
 --
 
 INSERT INTO `administrateur` (`Id_Admin`, `Identifiant_Admin`, `Mot_De_Passe_Admin`, `Nom_Admin`, `Prenom_Admin`) VALUES
@@ -49,7 +49,7 @@ INSERT INTO `administrateur` (`Id_Admin`, `Identifiant_Admin`, `Mot_De_Passe_Adm
 -- --------------------------------------------------------
 
 --
--- Table structure for table `auteur`
+-- Structure de la table `auteur`
 --
 
 DROP TABLE IF EXISTS `auteur`;
@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS `auteur` (
 ) ENGINE=InnoDB AUTO_INCREMENT=12 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `auteur`
+-- Déchargement des données de la table `auteur`
 --
 
 INSERT INTO `auteur` (`Id_Auteur`, `Nom_Auteur`, `Prenom_Auteur`) VALUES
@@ -80,7 +80,7 @@ INSERT INTO `auteur` (`Id_Auteur`, `Nom_Auteur`, `Prenom_Auteur`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `categories`
+-- Structure de la table `categories`
 --
 
 DROP TABLE IF EXISTS `categories`;
@@ -91,7 +91,7 @@ CREATE TABLE IF NOT EXISTS `categories` (
 ) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `categories`
+-- Déchargement des données de la table `categories`
 --
 
 INSERT INTO `categories` (`Id_Categorie`, `Nom_Categorie`) VALUES
@@ -105,7 +105,7 @@ INSERT INTO `categories` (`Id_Categorie`, `Nom_Categorie`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `consulte`
+-- Structure de la table `consulte`
 --
 
 DROP TABLE IF EXISTS `consulte`;
@@ -120,7 +120,7 @@ CREATE TABLE IF NOT EXISTS `consulte` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `ecrit_par`
+-- Structure de la table `ecrit_par`
 --
 
 DROP TABLE IF EXISTS `ecrit_par`;
@@ -132,7 +132,7 @@ CREATE TABLE IF NOT EXISTS `ecrit_par` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `ecrit_par`
+-- Déchargement des données de la table `ecrit_par`
 --
 
 INSERT INTO `ecrit_par` (`Id_Auteur`, `Id_Livre`) VALUES
@@ -150,7 +150,7 @@ INSERT INTO `ecrit_par` (`Id_Auteur`, `Id_Livre`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `edite`
+-- Structure de la table `edite`
 --
 
 DROP TABLE IF EXISTS `edite`;
@@ -165,7 +165,7 @@ CREATE TABLE IF NOT EXISTS `edite` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `editeur`
+-- Structure de la table `editeur`
 --
 
 DROP TABLE IF EXISTS `editeur`;
@@ -176,7 +176,7 @@ CREATE TABLE IF NOT EXISTS `editeur` (
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `editeur`
+-- Déchargement des données de la table `editeur`
 --
 
 INSERT INTO `editeur` (`Id_Editeur`, `Nom_Editeur`) VALUES
@@ -189,7 +189,7 @@ INSERT INTO `editeur` (`Id_Editeur`, `Nom_Editeur`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `langue`
+-- Structure de la table `langue`
 --
 
 DROP TABLE IF EXISTS `langue`;
@@ -200,17 +200,17 @@ CREATE TABLE IF NOT EXISTS `langue` (
 ) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `langue`
+-- Déchargement des données de la table `langue`
 --
 
 INSERT INTO `langue` (`Id_Langue`, `Nom_Langue`) VALUES
-(1, 'frenchy'),
+(1, 'français'),
 (2, 'bilingue');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `livre`
+-- Structure de la table `livre`
 --
 
 DROP TABLE IF EXISTS `livre`;
@@ -230,7 +230,7 @@ CREATE TABLE IF NOT EXISTS `livre` (
 ) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `livre`
+-- Déchargement des données de la table `livre`
 --
 
 INSERT INTO `livre` (`Id_Livre`, `Titre`, `Synopsis`, `Nombre_Pages`, `ISBN`, `Annee_Publication`, `Validation_Livre`, `Id_Editeur`, `Id_Langue`) VALUES
@@ -248,7 +248,7 @@ INSERT INTO `livre` (`Id_Livre`, `Titre`, `Synopsis`, `Nombre_Pages`, `ISBN`, `A
 -- --------------------------------------------------------
 
 --
--- Table structure for table `modifie`
+-- Structure de la table `modifie`
 --
 
 DROP TABLE IF EXISTS `modifie`;
@@ -263,7 +263,7 @@ CREATE TABLE IF NOT EXISTS `modifie` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `rajoute`
+-- Structure de la table `rajoute`
 --
 
 DROP TABLE IF EXISTS `rajoute`;
@@ -278,7 +278,7 @@ CREATE TABLE IF NOT EXISTS `rajoute` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `regarde`
+-- Structure de la table `regarde`
 --
 
 DROP TABLE IF EXISTS `regarde`;
@@ -293,7 +293,7 @@ CREATE TABLE IF NOT EXISTS `regarde` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `telecharge`
+-- Structure de la table `telecharge`
 --
 
 DROP TABLE IF EXISTS `telecharge`;
@@ -308,7 +308,7 @@ CREATE TABLE IF NOT EXISTS `telecharge` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `trie_par`
+-- Structure de la table `trie_par`
 --
 
 DROP TABLE IF EXISTS `trie_par`;
@@ -320,7 +320,7 @@ CREATE TABLE IF NOT EXISTS `trie_par` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `trie_par`
+-- Déchargement des données de la table `trie_par`
 --
 
 INSERT INTO `trie_par` (`Id_Livre`, `Id_Categorie`) VALUES
@@ -338,7 +338,7 @@ INSERT INTO `trie_par` (`Id_Livre`, `Id_Categorie`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `upload`
+-- Structure de la table `upload`
 --
 
 DROP TABLE IF EXISTS `upload`;
@@ -353,7 +353,7 @@ CREATE TABLE IF NOT EXISTS `upload` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `visiteur`
+-- Structure de la table `visiteur`
 --
 
 DROP TABLE IF EXISTS `visiteur`;
@@ -368,10 +368,10 @@ CREATE TABLE IF NOT EXISTS `visiteur` (
   `Code_Postal` int(5) UNSIGNED DEFAULT NULL,
   `Ville` varchar(30) DEFAULT NULL,
   PRIMARY KEY (`Id_Visiteur`)
-) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=latin1;
+) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `visiteur`
+-- Déchargement des données de la table `visiteur`
 --
 
 INSERT INTO `visiteur` (`Id_Visiteur`, `Nom_Visiteur`, `Prenom_Visiteur`, `Date_Naissance`, `Adresse_Mail_Visiteur`, `Mot_De_Passe_Visiteur`, `Adresse`, `Code_Postal`, `Ville`) VALUES
@@ -385,77 +385,78 @@ INSERT INTO `visiteur` (`Id_Visiteur`, `Nom_Visiteur`, `Prenom_Visiteur`, `Date_
 (13, 'jean', 'jean', '1565-11-11', 'gou@klk.fr', 'mou', 'mou', 35000, 'rennes'),
 (14, 'jean', 'jean', '1565-11-11', 'gou@klk.fr', 'fre', 'mou', 35000, 'rennes'),
 (15, 'moi', 'moi', '1889-12-12', 'moi@moi.moi', 'moi', 'moi', 10000, 'moi'),
-(19, 'phi', 'phi', '1996-11-11', 'phi@phi.phi', 'fip', 'phi', 35000, 'phi');
+(19, 'phi', 'phi', '1996-11-11', 'phi@phi.phi', 'fip', 'phi', 35000, 'phi'),
+(21, 'Huxley', 'Aldous', '1894-06-26', 'aldous.huxley@hallu.com', 'bonjour', 'Rue de la mairie', 54930, 'They-sous-Vaudemont');
 
 --
--- Constraints for dumped tables
+-- Contraintes pour les tables déchargées
 --
 
 --
--- Constraints for table `consulte`
+-- Contraintes pour la table `consulte`
 --
 ALTER TABLE `consulte`
   ADD CONSTRAINT `FK_Consulte_Id_Livre` FOREIGN KEY (`Id_Livre`) REFERENCES `livre` (`Id_Livre`),
   ADD CONSTRAINT `FK_Consulte_Id_Visiteur` FOREIGN KEY (`Id_Visiteur`) REFERENCES `visiteur` (`Id_Visiteur`);
 
 --
--- Constraints for table `ecrit_par`
+-- Contraintes pour la table `ecrit_par`
 --
 ALTER TABLE `ecrit_par`
   ADD CONSTRAINT `FK_Ecrit_par_Id_Auteur` FOREIGN KEY (`Id_Auteur`) REFERENCES `auteur` (`Id_Auteur`),
   ADD CONSTRAINT `FK_Ecrit_par_Id_Livre` FOREIGN KEY (`Id_Livre`) REFERENCES `livre` (`Id_Livre`);
 
 --
--- Constraints for table `edite`
+-- Contraintes pour la table `edite`
 --
 ALTER TABLE `edite`
   ADD CONSTRAINT `FK_Edite_Id_Admin` FOREIGN KEY (`Id_Admin`) REFERENCES `administrateur` (`Id_Admin`),
   ADD CONSTRAINT `FK_Edite_Id_Livre` FOREIGN KEY (`Id_Livre`) REFERENCES `livre` (`Id_Livre`);
 
 --
--- Constraints for table `livre`
+-- Contraintes pour la table `livre`
 --
 ALTER TABLE `livre`
   ADD CONSTRAINT `FK_Livre_Id_Editeur` FOREIGN KEY (`Id_Editeur`) REFERENCES `editeur` (`Id_Editeur`),
   ADD CONSTRAINT `FK_Livre_Id_Langue` FOREIGN KEY (`Id_Langue`) REFERENCES `langue` (`Id_Langue`);
 
 --
--- Constraints for table `modifie`
+-- Contraintes pour la table `modifie`
 --
 ALTER TABLE `modifie`
   ADD CONSTRAINT `FK_Modifie_Id_Livre` FOREIGN KEY (`Id_Livre`) REFERENCES `livre` (`Id_Livre`),
   ADD CONSTRAINT `FK_Modifie_Id_Visiteur` FOREIGN KEY (`Id_Visiteur`) REFERENCES `visiteur` (`Id_Visiteur`);
 
 --
--- Constraints for table `rajoute`
+-- Contraintes pour la table `rajoute`
 --
 ALTER TABLE `rajoute`
   ADD CONSTRAINT `FK_Rajoute_Id_Admin` FOREIGN KEY (`Id_Admin`) REFERENCES `administrateur` (`Id_Admin`),
   ADD CONSTRAINT `FK_Rajoute_Id_Livre` FOREIGN KEY (`Id_Livre`) REFERENCES `livre` (`Id_Livre`);
 
 --
--- Constraints for table `regarde`
+-- Contraintes pour la table `regarde`
 --
 ALTER TABLE `regarde`
   ADD CONSTRAINT `FK_Regarde_Id_Admin` FOREIGN KEY (`Id_Admin`) REFERENCES `administrateur` (`Id_Admin`),
   ADD CONSTRAINT `FK_Regarde_Id_Livre` FOREIGN KEY (`Id_Livre`) REFERENCES `livre` (`Id_Livre`);
 
 --
--- Constraints for table `telecharge`
+-- Contraintes pour la table `telecharge`
 --
 ALTER TABLE `telecharge`
   ADD CONSTRAINT `FK_Telecharge_Id_Livre` FOREIGN KEY (`Id_Livre`) REFERENCES `livre` (`Id_Livre`),
   ADD CONSTRAINT `FK_Telecharge_Id_Visiteur` FOREIGN KEY (`Id_Visiteur`) REFERENCES `visiteur` (`Id_Visiteur`);
 
 --
--- Constraints for table `trie_par`
+-- Contraintes pour la table `trie_par`
 --
 ALTER TABLE `trie_par`
   ADD CONSTRAINT `FK_Trie_par_Id_Categorie` FOREIGN KEY (`Id_Categorie`) REFERENCES `categories` (`Id_Categorie`),
   ADD CONSTRAINT `FK_Trie_par_Id_Livre` FOREIGN KEY (`Id_Livre`) REFERENCES `livre` (`Id_Livre`);
 
 --
--- Constraints for table `upload`
+-- Contraintes pour la table `upload`
 --
 ALTER TABLE `upload`
   ADD CONSTRAINT `FK_Upload_Id_Livre` FOREIGN KEY (`Id_Livre`) REFERENCES `livre` (`Id_Livre`),
